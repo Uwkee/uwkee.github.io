@@ -1,2 +1,2 @@
-# uwkee.github.io
-Sangreal - Tainted Grail Board Game Assistant
+# Sangreal - Tainted Grail Board Game Assistant
+Available on uwkee.github.io
