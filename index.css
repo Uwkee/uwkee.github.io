@@ -1,11 +1,4 @@
-#p-rowdies {
-  font-family: "Rowdies", monospace;
-}
-
-#p-varela-round {
+body {
   font-family: "Varela Round", monospace;
-}
-
-#p-supermercado-one {
-  font-family: "Supermercado One", monospace;
+  font-size: 24px;
 }
