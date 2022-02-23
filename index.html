@@ -22,45 +22,89 @@
 			</div>
 		</header>
 		<main>
-			<table id="main-table">
+			<table>
 				<tr>
 					<th colspan="4">Operating systems</th>
 				</tr>
 				<tr>
 					<td>Name</td>
-					<td>Overall knowledge</td>
+					<td>Overall knowledge level</td>
 					<td>Test environment</td>
 					<td>Production environment</td>
 				</tr>
 				<tr>
 					<td>Microsoft Windows Server</td>
-					<td></td>
-					<td></td>
-					<td></td>
+					<td><span class="span-green-dot">●</span> average-high</td>
+					<td><span class="span-green-dot">●</span> virtualbox 6.0.12, WS2022</td>
+					<td><span class="span-green-dot">●</span> hyper-v, WS2019 and older</td>
 				</tr>
 				<tr>
 					<td>Ubuntu Desktop / Server</td>
-					<td></td>
-					<td></td>
-					<td></td>
+					<td><span class="span-orange-dot">●</span> low-average</td>
+					<td><span class="span-green-dot">●</span> virtualbox 6.0.12, <span class="span-titled" data-title="Ubuntu 20.04 LTS">Focal Fossa</span></td>
+					<td><span class="span-green-dot">●</span> hyper-v, <span class="span-titled" data-title="Ubuntu 18.04 LTS">Bionic Beaver</span> and older</td>
 				</tr>
 				<tr>
 					<td>Debian</td>
-					<td></td>
-					<td></td>
-					<td></td>
+					<td><span class="span-orange-dot">●</span> average</td>
+					<td><span class="span-green-dot">●</span> virtualbox 6.0.12, <span class="span-titled" data-title="Debian 11">Bullseye</span></td>
+					<td><span class="span-green-dot">●</span> hyper-v, <span class="span-titled" data-title="Debian 11">Bullseye</span> and older</td>
 				</tr>
 				<tr>
 					<td>CentOS</td>
-					<td></td>
-					<td></td>
-					<td></td>
+					<td><span class="span-orange-dot">●</span> low-average</td>
+					<td><span class="span-green-dot">●</span> virtualbox 6.0.12, 7-2009</td>
+					<td><span class="span-red-dot">●</span> no</td>
 				</tr>
 				<tr>
 					<td>Gentoo</td>
-					<td></td>
-					<td></td>
-					<td></td>
+					<td><span class="span-red-dot">●</span> low</td>
+					<td><span class="span-green-dot">●</span> virtualbox 6.0.12, <span class="span-titled" data-title="Gentoo Base System release 2.7">5.15.23</span></td>
+					<td><span class="span-red-dot">●</span> no</td>
+				</tr>
+			</table>
+			<table>
+				<tr>
+					<th colspan="4">Microsoft Windows Server</th>
+				</tr>
+				<tr>
+					<td>Name</td>
+					<td>Overall knowledge level</td>
+					<td>Test environment</td>
+					<td>Production environment</td>
+				</tr>
+				<tr>
+					<td>Active Directory</td>
+					<td><span class="span-orange-dot">●</span> average</td>
+					<td rowspan="6"><span class="span-green-dot">●</span> virtualbox 6.0.12, WS2022</td>
+					<td rowspan="4"><span class="span-green-dot">●</span> hyper-v, WS2003 and WS2012</td>
+				</tr>
+				<tr>
+					<td>Group Policy</td>
+					<td><span class="span-orange-dot">●</span> low-average</td>
+				</tr>
+				<tr>
+					<td>DHCP Server</td>
+					<td><span class="span-orange-dot">●</span> average</td>
+				</tr>
+				<tr>
+					<td>DNS Server</td>
+					<td><span class="span-orange-dot">●</span> average</td>
+				</tr>
+				<tr>
+					<td>Distributed File System</td>
+					<td><span class="span-green-dot">●</span> average-high</td>
+					<td rowspan="2"><span class="span-green-dot">●</span> hyper-v, WS2012</td>
+				</tr>
+				<tr>
+					<td>Windows Server Update Services</td>
+					<td><span class="span-green-dot">●</span> average-high</td>
+				</tr>
+				<tr>
+					<td>Windows Admin Center</td>
+					<td><span class="span-red-dot">●</span> low</td>
+					<td><span class="span-red-dot">●</span> no</td>
+					<td><span class="span-red-dot">●</span> no</td>
 				</tr>
 			</table>
 		</main>
