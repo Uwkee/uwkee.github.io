@@ -1,8 +1,11 @@
 :root {
   --color-main: #eeeeee;
-  --color-main-sub: #393e46;
+  --color-main-sub: #565b63;
+  --color-main-sub-light: #cecece;
   --color-main-sub-dark: #222831;
-  --color-main-sub-light: #00adb5;
+  --table-color-red: #ef8677;
+  --table-color-green: #a0e77d;
+  --table-color-blue: #82b6d9;
 }
 
 /* Overall */
@@ -11,95 +14,76 @@
   padding: 0;
 }
 
-html {
+html,
+body {
   height: 100%;
 }
 
 body {
-  height: 100%;
   display: flex;
   flex-direction: column;
   background-color: var(--color-main, white);
-  color: var(--color-main-sub, black);
-  font-family: "Marmelad", monospace;
-  font-size: 14px;
+  color: var(--color-main-sub-dark, black);
+  font-family: "Ubuntu", monospace;
+  font-size: 20px;
 }
 
 a {
-  color: var(--color-main-sub-light, cyan);
   text-decoration: none;
-}
-
-a:hover {
-  border-bottom: 2px dashed;
 }
 
 /* Header */
 header {
-  height: 60px;
-  line-height: 60px;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 25px 75px;
 }
 
-header div {
-  flex-grow: 1;
+header h4 {
+  color: var(--color-main-sub, black);
 }
 
-header div:first-child {
-  margin-left: 10px;
-  font-family: "Major Mono Display", monospace;
-  font-size: 48px;
+header img {
+  opacity: 0.7;
+  margin-left: 8px;
+  width: 35px;
   user-select: none;
-}
-
-header div:last-child {
-  margin-right: 10px;
-  font-size: 26px;
-  text-align: right;
-}
-
-header li {
-  display: inline;
-  padding: 8px;
 }
 
 /* Content */
 main {
   flex: 1;
-  margin: 10px;
-  font-size: 26px;
+  margin: 25px 75px;
+}
+
+#main-table {
+  width: 100%;
+  table-layout: fixed;
+  background-color: white;
+  border-style: hidden;
+  border-collapse: collapse;
+  border-radius: 10px;
+  font-family: monospace;
   text-align: center;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  color: var(--color-main, white);
 }
 
-main div {
-  margin: 10px;
-  padding: 15px;
-  background-color: var(--color-main-sub, black);
-  border-radius: 8px;
+#main-table tr,
+th,
+td {
+  padding: 5px 0;
 }
 
-/* Footer */
-footer {
-  height: 30px;
-  line-height: 30px;
-  display: flex;
-  font-family: "Jura", monospace;
+#main-table td {
+  border: 1px solid var(--color-main, white);
 }
 
-footer div {
-  flex-grow: 1;
+#main-table tr:nth-child(2) td {
+  border: none;
+  background-color: var(--table-color-blue, blue);
 }
 
-footer div:first-child {
-  margin-left: 10px;
-}
-
-footer div:last-child {
-  margin-right: 10px;
-  text-align: right;
+#main-table th {
+  border-radius: 10px 10px 0 0;
+  background-color: var(--color-main-sub-light, grey);
 }
