@@ -103,6 +103,15 @@ table tr:nth-child(2) td {
   color: var(--table-color-orange, orange);
 }
 
+@keyframes tooltip {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .span-titled {
   border-bottom: 2px dashed;
   cursor: help;
@@ -112,6 +121,7 @@ table tr:nth-child(2) td {
   content: attr(data-title);
   position: absolute;
   z-index: 1;
+  animation: tooltip 0.15s 1 linear;
   margin: 10px 0 0 10px;
   padding: 5px 10px;
   border-radius: 10px;
