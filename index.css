@@ -6,6 +6,7 @@
   --table-color-red: #ef8677;
   --table-color-green: #a0e77d;
   --table-color-blue: #82b6d9;
+  --table-color-orange: #ffce73;
 }
 
 /* Overall */
@@ -57,7 +58,8 @@ main {
   margin: 25px 75px;
 }
 
-#main-table {
+table {
+  margin-bottom: 30px;
   width: 100%;
   table-layout: fixed;
   background-color: white;
@@ -68,22 +70,51 @@ main {
   text-align: center;
 }
 
-#main-table tr,
+tr,
 th,
 td {
-  padding: 5px 0;
+  padding: 5px;
 }
 
-#main-table td {
+table td {
   border: 1px solid var(--color-main, white);
 }
 
-#main-table tr:nth-child(2) td {
+table th {
+  border-radius: 10px 10px 0 0;
+  background-color: var(--color-main-sub-light, grey);
+}
+
+table tr:nth-child(2) td {
   border: none;
   background-color: var(--table-color-blue, blue);
 }
 
-#main-table th {
-  border-radius: 10px 10px 0 0;
-  background-color: var(--color-main-sub-light, grey);
+/* Misc */
+.span-green-dot {
+  color: var(--table-color-green, green);
+}
+
+.span-red-dot {
+  color: var(--table-color-red, red);
+}
+
+.span-orange-dot {
+  color: var(--table-color-orange, orange);
+}
+
+.span-titled {
+  border-bottom: 2px dashed;
+  cursor: help;
+}
+
+.span-titled:hover::after {
+  content: attr(data-title);
+  position: absolute;
+  z-index: 1;
+  margin: 10px 0 0 10px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: rgba(34, 40, 49, 0.75); /* --color-main-sub-dark */
+  color: var(--color-main, white);
 }
