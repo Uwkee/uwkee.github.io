@@ -30,7 +30,13 @@ body {
 }
 
 a {
+  color: var(--color-main-sub-dark, black);
   text-decoration: none;
+}
+
+sup {
+  padding: 0 2px;
+  font-size: 10px;
 }
 
 /* Header */
@@ -70,6 +76,13 @@ table {
   text-align: center;
 }
 
+#main-reference {
+  color: var(--color-main-sub, grey);
+  border-left: 3px solid;
+  border-color: var(--table-color-blue, blue);
+  font-size: 16px;
+}
+
 tr,
 th,
 td {
@@ -88,6 +101,21 @@ table th {
 table tr:nth-child(2) td {
   border: none;
   background-color: var(--table-color-blue, blue);
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 75px;
+  padding-bottom: 25px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+footer a {
+  margin-right: 20px;
+  border-bottom: 2px dashed;
 }
 
 /* Misc */
