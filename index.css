@@ -64,6 +64,14 @@ main {
   margin: 25px 75px;
 }
 
+#main-toosmall {
+  display: none;
+  overflow: hidden;
+  text-align: center;
+  font-family: monospace;
+  font-size: 16px;
+}
+
 table {
   margin-bottom: 30px;
   width: 100%;
@@ -172,4 +180,88 @@ footer a {
 
 .span-latest {
   background-color: var(--table-color-green, green);
+}
+
+/* Media */
+@media (max-width: 980px) {
+  #main-bottom {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 780px) {
+  table {
+    font-size: 14px;
+  }
+  #main-bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+  #main-bottom-updates {
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 650px) {
+  #main-bottom-reference {
+    padding-left: 5px;
+  }
+}
+
+@media (max-width: 550px) {
+  header {
+    margin: 25px 25px 0 25px;
+    flex-direction: column;
+  }
+  #header-sn {
+    margin-top: 25px;
+  }
+  main {
+    margin: 25px 25px;
+  }
+  table {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 410px) {
+  h2 {
+    font-size: 24px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+  table {
+    font-size: 10px;
+  }
+  .span-green-dot,
+  .span-red-dot,
+  .span-orange-dot,
+  .span-grey-dot {
+    display: none;
+    overflow: hidden;
+  }
+  footer {
+    margin-top: 0;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+  }
+  footer div:last-child {
+    margin-top: 25px;
+  }
+  footer a {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 360px) {
+  table,
+  #main-bottom {
+    display: none;
+    overflow: hidden;
+  }
+  #main-toosmall {
+    display: block;
+  }
 }
