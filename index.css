@@ -76,11 +76,20 @@ table {
   text-align: center;
 }
 
-#main-reference {
+#main-bottom {
+  display: flex;
+  justify-content: space-between;
   color: var(--color-main-sub, grey);
+  font-size: 16px;
+}
+
+#main-bottom-reference {
   border-left: 3px solid;
   border-color: var(--table-color-blue, blue);
-  font-size: 16px;
+}
+
+#main-bottom-updates span {
+  background-color: var(--table-color-green, green);
 }
 
 tr,
@@ -131,6 +140,10 @@ footer a {
   color: var(--table-color-orange, orange);
 }
 
+.span-grey-dot {
+  color: var(--color-main-sub-light, grey);
+}
+
 @keyframes tooltip {
   0% {
     opacity: 0;
@@ -155,4 +168,8 @@ footer a {
   border-radius: 10px;
   background-color: rgba(34, 40, 49, 0.75); /* --color-main-sub-dark */
   color: var(--color-main, white);
+}
+
+.span-latest {
+  background-color: var(--table-color-green, green);
 }
