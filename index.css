@@ -178,8 +178,15 @@ footer a {
   color: var(--color-main, white);
 }
 
+@keyframes latest {
+  100% {
+    background-color: rgba(160, 231, 125, 0);
+  }
+}
+
 .span-latest {
-  background-color: var(--table-color-green, green);
+  animation: latest 5s 1 linear forwards;
+  background-color: rgba(160, 231, 125, 1); /* --table-color-green */
 }
 
 /* Media */
@@ -220,6 +227,7 @@ footer a {
     margin: 25px 25px;
   }
   table {
+    margin-bottom: 25px;
     font-size: 12px;
   }
 }
@@ -255,7 +263,13 @@ footer a {
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 350px) {
+  table {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 300px) {
   table,
   #main-bottom {
     display: none;
