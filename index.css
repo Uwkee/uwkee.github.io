@@ -34,6 +34,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  opacity: 0.8;
+}
+
 sup {
   padding: 0 2px;
   font-size: 10px;
